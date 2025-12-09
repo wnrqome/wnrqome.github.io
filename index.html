@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dostępna Strona Internetowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Przejdź do głównej treści</a>
+    
+    <header>
+        <h1>Dostępna Strona Internetowa</h1>
+    </header>
+    
+    <nav aria-label="Główne menu nawigacyjne">
+        <ul>
+            <li><a href="#sekcja1">Sekcja 1</a></li>
+            <li><a href="#sekcja2">Sekcja 2</a></li>
+            <li><a href="#sekcja3">Sekcja 3</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-content" tabindex="-1">
+        <section id="sekcja1" aria-labelledby="h2-sek1">
+            <h2 id="h2-sek1">Sekcja pierwsza: Wstęp</h2>
+            <p>Ta strona spełnia standardy WCAG 2.1, zapewniając dostępność dla wszystkich użytkowników.</p>
+            <figure>
+                <img src="Niebieski.png" alt="Niebieski abstrakcyjny wzór reprezentujący dostępność cyfrową">
+                <figcaption>Ilustracja symbolizująca inkluzywny design.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="sekcja2" aria-labelledby="h2-sek2">
+            <h2 id="h2-sek2">Sekcja druga: Korzyści dostępności</h2>
+            <p>Dostępność poprawia doświadczenie wszystkich użytkowników i jest wymagana prawnie w Polsce.</p>
+            <figure>
+                <img src="drugie.png" alt="Ikona osoby z niepełnosprawnościami korzystającej z komputera">
+                <figcaption>Osoba korzystająca z assistive technologies.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="sekcja3" aria-labelledby="h2-sek3">
+            <h2 id="h2-sek3">Sekcja trzecia: Najlepsze praktyki</h2>
+            <p>Kluczowe elementy: alt text, kontrast kolorów, nawigacja klawiaturą i język strony.</p>
+        </section>
+        
+        <section id="galeria" aria-labelledby="h2-gal">
+            <h2 id="h2-gal">Galeria</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="trzy.png" alt="Grupa osób różnych grup korzystająca ze strony internetowej">
+                    <figcaption>Różnorodni użytkownicy strony.</figcaption>
+                </figure>
+                <figure>
+                    <img src="cztery.png" alt="Ekran czytnika ekranu wyświetlający strukturę strony">
+                    <figcaption>Czytnik ekranu analizujący stronę.</figcaption>
+                </figure>
+                <figure>
+                    <img src="piec.png" alt="Klawiatura z fokusem na linku nawigacyjnym">
+                    <figcaption>Testy nawigacji klawiaturą.</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section id="kontakt" aria-labelledby="h2-kont">
+            <h2 id="h2-kont">Dane kontaktowe</h2>
+            <address>
+                Firma Przykładowa<br>
+                ul. Dostępna 123<br>
+                00-001 Warszawa<br>
+                Telefon: <a href="tel:+48123456789">+48 123 456 789</a><br>
+                Email: <a href="mailto:kontakt@firma.pl">kontakt@firma.pl</a>
+            </address>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Przykładowa Strona. Zgodna z WCAG 2.1 poziom AA.</p>
+    </footer>
+</body>
+</html>

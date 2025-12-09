@@ -1,0 +1,94 @@
+/* Reset i podstawy */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    color: #333; 
+    background: #fff; 
+}
+
+/* Skip link dla dostępności */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+.skip-link:focus { top: 6px; }
+
+/* Header */
+header { 
+    background: #0056b3; 
+    color: white; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+/* Nawigacja */
+nav ul { 
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    background: #f8f9fa; 
+}
+nav li { margin: 0 1rem; }
+nav a { 
+    color: #0056b3; 
+    text-decoration: none; 
+    padding: 0.5rem 1rem; 
+    display: block; 
+}
+nav a:focus, nav a:hover { 
+    background: #0056b3; 
+    color: white; 
+}
+
+/* Main content */
+main { display: grid; gap: 2rem; }
+
+/* Sekcje */
+section { 
+    padding: 1.5rem; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+}
+
+/* Obrazy */
+img { max-width: 100%; height: 80%; }
+.gallery { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1rem; 
+}
+figure { margin: 0; }
+figcaption { font-style: italic; }
+
+/* Kontakt */
+address { 
+    font-style: normal; 
+    background: #f8f9fa; 
+    padding: 1rem; 
+    border-left: 4px solid #0056b3; 
+}
+
+/* Footer */
+footer { 
+    text-align: center; 
+    padding: 1rem; 
+    background: #f8f9fa; 
+    margin-top: 2rem; 
+}
+
+/* Responsywność */
+@media (max-width: 768px) { 
+    nav ul { flex-direction: column; } 
+    body { padding: 10px; }
+}
